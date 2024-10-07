@@ -202,7 +202,7 @@ def cross(f, Y0, m=None, e=None, nswp=None, tau=1.1, dr_min=1, dr_max=1,
                 info['stop'] = info['stop'] or 'cb'
 
         if teneva._info_appr(info, _time, nswp, e, e_vld, log):
-            return Y
+            return Y, cache
 
 
 def _func(f, Ig, Ir, Ic, info, cache=None):
